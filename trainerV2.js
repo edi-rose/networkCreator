@@ -6,15 +6,15 @@ const getData = require('./helpers/assembleData')
 to create your own network uncomment the code at the bottom and chose a team in the
 train function, then copy the json that is returned in the console.log*/
 
-var net = new brain.NeuralNetwork([9, 9, 9], {
+var me = new brain.NeuralNetwork([9, 9, 9], {
   hiddenLayers: [1, 9],
   iterations: 100
 })
 
 function train(team){
-  net.train(getData(team))
+   me.train(getData(team))
 }
 
 train('naught')
 console.log('hello')
-console.log(net.toJSON())
+console.log(me.toJSON())

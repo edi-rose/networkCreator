@@ -4,7 +4,7 @@ const makeBoards = require('../boardStuff/makeBoards')
 const crossMove = require('../Bots/botMovesReact').crossMove
 const naughtMove = require('../Bots/botMovesReact').naughtMove
 
-let boards = makeBoards(2000)
+let boards = makeBoards(100)
 
 //This file assembles all the input and output data for the network to be trained on.
 
